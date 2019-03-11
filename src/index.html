@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://luizhdinizf.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="collapsible.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="collapsible.js"></script>
+ 
+<style>
+	[data-collapsible-set="foo"] .collapsible-content {
+		margin-bottom: 0;
+	}
+</style>
+
+</head>
+<body>
+
+<div class="collapsible">
+	<h4>Show/Hide Content</h4>
+	<p>This is the collapsible content. Currently, it's a <code>p</code> element, but it could be anything really, like a <code>div</code> containing other <code>p</code>'s for example.</p>
+</div>
+
+
+<style>
+/* some simple demo styles for all collapsibles on this page */
+.collapsible-header,
+.collapsible-content {
+	border: 1px solid #ccc;
+	padding: .7em 35px;
+	font-size: 1em;
+	margin-top: 0;
+	background-color: #fff;
+}
+.collapsible-content {
+	margin-top: 0;
+	border-top-width: 0;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+.collapsible-header {
+	margin-bottom: 0;
+	cursor: pointer;
+	background: url(img/tri-down.png) 10px 50% no-repeat;
+}
+.collapsible-header:focus {
+	background-color: #eee;
+}
+.collapsible-collapsed .collapsible-header {
+	background-image: url(img/tri-right.png);
+}
+</style>
+<script>
+$( function(){
+	// initialize collapsibles:
+	$( document ).trigger( "enhance" );
+});
+</script>
+
+
+
+<div class="hiddendiv common"></div></body></html>

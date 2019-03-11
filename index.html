@@ -1,665 +1,334 @@
-
 <!DOCTYPE html>
-<!-- saved from url=(0030)https://luizhdinizf.github.io/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <script src="./luizhdinizf.github.io_files/jquery.min.js.download"></script>
-<script src="./luizhdinizf.github.io_files/materialize.min.js.download"></script>
-<link rel="stylesheet" href="./luizhdinizf.github.io_files/materialize.min.css">
-<link rel="stylesheet" href="./luizhdinizf.github.io_files/icon">
-  
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Collapsible Examples</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
- 
-<style>
-* {box-sizing: border-box}
-
-
-
-.skills {
-  text-align: right;
-  padding: 10px;
-  color: white;
-}
-
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
-</style>
+	<link rel="stylesheet" href="docs.css">
+	<link rel="stylesheet" href="src/lib/xrayhtml.css">
+	<link rel="stylesheet" href="src/collapsible.css" />
+	<link rel="stylesheet" href="src/collapsible-selectproxy.css" />
+	<link rel="stylesheet" href="src/collapsible.navbar.css" />
+	<script src="src/lib/jquery.js"></script>
+	<script src="src/lib/xrayhtml.js"></script>
+	<script type="text/javascript" src="src/collapsible.js"></script>
+	<script type="text/javascript" src="src/collapsible.set.js"></script>
+	<script type="text/javascript" src="src/collapsible.menu.js"></script>
+	<script type="text/javascript" src="src/collapsible.menuunderlay.js"></script>
+	<script type="text/javascript" src="src/collapsible.menuactiveitem.js"></script>
+	<script type="text/javascript" src="src/collapsible.tab.js"></script>
+	<script type="text/javascript" src="src/collapsible.externaltoggle.js"></script>
+	<script type="text/javascript" src="src/collapsible.selectproxy.js"></script>
+	<script type="text/javascript" src="src/collapsible.navbar.js"></script>
+	
+	<script>
+		document.documentElement.className += " enhanced";
+	</script>
 </head>
-<body>
-
-<h1>My Skills</h1>
-<hr>
-<h2>Python</h2>
-
-<h3>Base</h3>
-<div class="container">
-  <div class="html">90%</div>
-</div>
-Conceitos da linguagem<br>
-Instalar bibliotecas<br>
-Virtual Enviroments<br>
-loops, condicionais, imports, debug<br>
-ides<br>
-Estruturas:List,Slices,dicts,tuples<br>
-Orientação a objetos<br>
-Regex<br>
-
-<h3>numpy</h3>
-<div class="container">
-  <div class="css">80%</div>
-</div>
-Slicing<br>
-arrays<br>
-datatypes<br>
-matrix computations<br>
-
-<h3>pandas</h3>
-<div class="container">
-  <div class="css">80%</div>
-</div>
-Importar de Mysql<br>
-TimeSeries<br>
-Estatística: Média Movel, devpad<br>
-DownSampling e UpSampling<br>
 
 
 
-<h3>matplotlib</h3>
-<div class="container">
-  <div class="css">80%</div>
-</div>
-Save Image<br>
-Histogram<br>
-Line Plots<br>
-
-<h3>opencv</h3>
-<div class="container">
-  <div class="css">80%</div>
-</div>
-Load Image and video<br>
-video from various ipcams<br>
-filters,thresholds,masks<br>
-color based detections and histograms<br>
-
-<h3>plotly</h3>
-<div class="container">
-  <div class="css">80%</div>
-</div>
-dash html<br>
-dash components<br>
-dash callbacks<br>
-estilizar<br>
-graficos a partir de funções<br>
-
-<h3>scipy</h3>
-<div class="container">
-  <div class="css">80%</div>
-</div>
-
-<h3>Regex</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-
-<hr>
-<h2>Web</h2>
-<h3>html e css</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Get e Post<br>
-Estilos import stylesheets<br>
-Bootstrap<br>
-Dreamweaver<br>
-div,span e design responsivo<br>
-
-<h3>JavaScript</h3>
-<div class="container">
-  <div class="js">65%</div>
-</div>
-incluir no html<br>
-loops e condicionais<br>
-variáveis<br>
-
-<h3>VueJs</h3>
-<div class="container">
-  <div class="js">65%</div>
-</div>
+<body class="docs">
 
 
-<h3>PHP</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Get e Post<br>
-Json encode e decode<br>
-Loops e condicionais<br>
-Database Mysql<br>
-File Upload<br>
-APACHE e XAMP SERVER<br>
-functions e librarys<br>
-Estruturas de dados<br>
+			<style>
+			/* some simple demo styles for all collapsibles on this page */
+			.collapsible-header,
+			.collapsible-content {
+				border: 1px solid #ccc;
+				padding: .7em 35px;
+				font-size: 1em;
+				margin-top: 0;
+				background-color: #fff;
+			}
+			.collapsible-content {
+				margin-top: 0;
+				border-top-width: 0;
+				padding-top: 1.5em;
+				padding-bottom: 1.5em;
+			}
+			.collapsible-header {
+				margin-bottom: 0;
+				cursor: pointer;
+				background: url(img/tri-down.png) 10px 50% no-repeat;
+			}
+			.collapsible-header:focus {
+				background-color: #eee;
+			}
+			.collapsible-collapsed .collapsible-header {
+				background-image: url(img/tri-right.png);
+			}
+			</style>
+			<script>
+			$( function(){
+				// initialize collapsibles:
+				$( document ).trigger( "enhance" );
+			});
+			</script>
+			
+			<style>
+			* {box-sizing: border-box}
 
-<h3>Cloud</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-AWS EC2<br>
-Heroku<br>
 
-<h3>Banco de Dados</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Mysql<br>
 
-<h3>Node-red</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-flows<br>
-mqtt<br>
-databases<br>
-dashboard<br>
+			.skills {
+			  text-align: right;
+			  padding: 10px;
+			  color: white;
+			}
 
-<hr>
-<h2>Eletrônica e Embarcados</h2>
-<h3>Microcontroladores</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-NodeMCU<br>
-Platformio<br>
-Arduino<br>
-PIC<br>
-
-<h3>Protocolos</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-I2C<br>
-SPI<br>
-RF433<br>
-
-<h3>Eletrônica</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-PCB Design<br>
-Soldagem<br>
-Sensores e components<br>
-
-<h3>FPGA</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Altera Cyclone II<br>
-JTAG e gravação<br>
-
-<h3>Raspberry</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Raspbian<br>
-librelec<br>
-recalbox<br>
-Servidor wamp<br>
-Servidor python<br>
-GPIO<br>
-Configurar como Access point<br>
+			.html {width: 90%; background-color: #4CAF50;}
+			.css {width: 80%; background-color: #2196F3;}
+			.js {width: 65%; background-color: #f44336;}
+			.php {width: 60%; background-color: #808080;}
+			.html {width: 90%; background-color: #4CAF50;}
+			.css {width: 80%; background-color: #2196F3;}
+			.js {width: 65%; background-color: #f44336;}
+			.php {width: 60%; background-color: #808080;}
+			.html {width: 90%; background-color: #4CAF50;}
+			.css {width: 80%; background-color: #2196F3;}
+			.js {width: 65%; background-color: #f44336;}
+			.php {width: 60%; background-color: #808080;}
+			.html {width: 90%; background-color: #4CAF50;}
+			.css {width: 80%; background-color: #2196F3;}
+			.js {width: 65%; background-color: #f44336;}
+			.php {width: 60%; background-color: #808080;}
+			</style>
+		
 
 
 
 
 
-<hr>
-<h2>Outros</h2>
-<h3>Git</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-SSH git<br>
-commit,push,pull<br>
-branch,fetch<br>
 
 
-<h3>Impressão 3D</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Modelagem<br>
-Firmware<br>
-Calibração<br>
-Fatiamento e impressão<br>
-Correção de defeitos<br>
-
-<h3>Blender 3D</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Modelagem<br>
-Cycles<br>
-
-<h3>Unity Engine</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Projetos<br>
-Asset Store<br>
-Blender Import<br>
-Animations<br>
-Android<br>
-C# Scripting básico<br>
-
-<h3>Vuforia e Realidade Virtual</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Image Target<br>
-Model Target<br>
-Vumark<br>
-Pose Detection<br>
 
 
-<h3>Linux</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Ubuntu e apt-get<br>
-Shell scripts<br>
-Recursos e comandos avançados<br>
-SSH, SSH Reverso<br>
 
 
-<h3>Protocolos de Rede</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-MQTT<br>
-HTTP<br>
-SSH<br>
 
-<hr>
-<h2>Automação Industrial</h2>
-<h3>Rockwell</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Factory Talk<br>
-RSlogix<br>
-RSlinx<br>
-RSnetworks<br>
-CompactLogix e MicroLogix<br>
-RemoteIO e DF1<br>
-PanelView<br>
+<h2 id="extensions" class="docs">Collapsible Extensions</h2>
 
-<h3>Siemens</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-S71200<br>
-S71200 Ihm<br>
+<p class="docs">Include the collapsible.set.js to use collapsible sets. A set of collapsibles work as an accordion. In the HTML, add <code>data-set</code> attributes with a shared value to include collapsibles in a set.</p>
 
-<h3>Redes</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Modbus<br>
-Profibus<br>
-Ethernet<br>
-DeviceNet<br>
 
-<h3>Weg</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-CFW-09 e CFW11<br>
-Relés<br>
-SoftStarters<br>
-
-<h3>Supervisórios</h3>
-<div class="container">
-  <div class="python">60%</div>
-</div>
-Intouch<br>
-Step7<br>
-FactoryTalk<br>
-
-<button class="collapsible">Open Section 1</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 2</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>  
- 
- <ul class="collapsible" data-collapsible="accordion">
-	<li class="">
-		<div class="collapsible-header">
-			<i class="material-icons">filter_drama</i>Python</div>
-		<div class="collapsible-body" style="display: none;">
-			<div class="row">
-				<div class="col s12 m12">
-					<ul class="collapsible" data-collapsible="accordion">
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">filter_drama</i>Base</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>numpy</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>pandas</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>matplotlib</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>opencv</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>plotly</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>scipy</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Regex</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+	<div class="collapsible collapsible-collapsed">
+		<div>
+		<h4><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCf9bNJmjtrBOPMbxCZLKQN59IyzVcUV0r_6j11lxgEd44bEmTnw" alt="some text" width=50 height=30>Python</h4>
 		</div>
-	</li>
-	<li class="">
-		<div class="collapsible-header">
-			<i class="material-icons">filter_drama</i>Web</div>
-		<div class="collapsible-body" style="display: none;">
-			<div class="row">
-				<div class="col s12 m12">
-					<ul class="collapsible" data-collapsible="accordion">
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">filter_drama</i>html e css</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>JavaScript</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>VueJs</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>PHP</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Cloud</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Banco de Dados</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Node-red</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+		<div>
+		<div class="collapsible collapsible-collapsed">
+		<h4>Base</h4>
+		<div>
+		Conceitos da linguagem<br>
+		Instalar bibliotecas<br>
+		Virtual Enviroments<br>
+		loops, condicionais, imports, debug<br>
+		ides<br>
+		Estruturas:List,Slices,dicts,tuples<br>
+		Orientação a objetos<br>
+		<div class="html">90%</div>
 		</div>
-	</li>
-	<li class="">
-		<div class="collapsible-header">
-			<i class="material-icons">filter_drama</i>Eletrônica e Embarcados</div>
-		<div class="collapsible-body" style="display: none;">
-			<div class="row">
-				<div class="col s12 m12">
-					<ul class="collapsible" data-collapsible="accordion">
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">filter_drama</i>Microcontroladores</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>Protocolos</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Eletrônica</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>FPGA</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>Raspberry</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
 		</div>
-	</li>
-	<li class="">
-		<div class="collapsible-header">
-			<i class="material-icons">filter_drama</i>Automação Industrial</div>
-		<div class="collapsible-body" style="display: none;">
-			<div class="row">
-				<div class="col s12 m12">
-					<ul class="collapsible" data-collapsible="accordion">
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">filter_drama</i>Rockwell</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>Siemens</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Redes</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Weg</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Supervisórios</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>numpy</h4>
+		<div>
+		Slicing<br>
+		arrays<br>
+		datatypes<br>
+		matrix computations<br>
 		</div>
-	</li>
-	<li class="">
-		<div class="collapsible-header">
-			<i class="material-icons">filter_drama</i>Outros</div>
-		<div class="collapsible-body" style="display: none;">
-			<div class="row">
-				<div class="col s12 m12">
-					<ul class="collapsible" data-collapsible="accordion">
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">filter_drama</i>Git</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>Impressão 3D</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Blender 3D</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">filter_drama</i>Unity Engine</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>Vuforia e Realidade Virtual</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="">
-							<div class="collapsible-header">
-								<i class="material-icons">place</i>Linux</div>
-							<div class="collapsible-body" style="display: none;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-						<li class="active">
-							<div class="collapsible-header active">
-								<i class="material-icons">whatshot</i>Protocolos de Rede</div>
-							<div class="collapsible-body" style="display: block;">
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
 		</div>
-	</li>
-</ul> 
-  
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>pandas</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>matplotlib</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>opencv</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>plotly</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>scipy</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Regex</h4>
+		<div class="css">80%</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="collapsible collapsible-collapsed">
+		<h4>Web</h4>
+		<div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>HTML e CSS</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>JavaScript</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>VueJs</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>PHP</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Cloud</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Databases</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Node-red</h4>
+		<div class="css">80%</div>
+		</div>		
+		</div>
+	</div>
+	
+	
+	<div class="collapsible collapsible-collapsed">
+		<h4>Eletrônica e Embarcados</h4>
+		<div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Microcontroladores</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Protocolos</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Eletrônica</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>FPGA</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Raspberry PI</h4>
+		<div class="css">80%</div>
+		</div>	
+		</div>
+	</div>
+	
+	
+	<div class="collapsible collapsible-collapsed" >
+		<h4>Outros</h4>
+		
+		
+		<div>
+		<div class="collapsible collapsible-collapsed">
+		<h4>Git</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Impressão 3D</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Blender 3D</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Unity Engine</h4>
+		<div class="css">80%</div>
+		</div>
+		
+	
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Vuforia e Realidade Virtual</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Linux</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Protocolos Web</h4>
+		<div class="css">80%</div>
+		</div>	
+		</div>
+	</div>
+	
+	
+	
+	<div class="collapsible collapsible-collapsed">
+		<h4>Automação Industrial</h4>
+		<div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Rockwell</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Siemens</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Redes Indústriais</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Weg</h4>
+		<div class="css">80%</div>
+		</div>
+		
+		<div class="collapsible collapsible-collapsed">
+		<h4>Supervisórios</h4>
+		<div class="css">80%</div>
+		</div>	
+		</div>
+	</div>
 
 
-<div class="hiddendiv common"></div></body></html>
+
+
+
+</div>
+</body>
+</html>
