@@ -1,38 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Face Recognition</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-	<link rel="stylesheet" href="docs.css">
-	<link rel="stylesheet" href="src/lib/xrayhtml.css">
-	<link rel="stylesheet" href="src/collapsible.css" />
-	<link rel="stylesheet" href="src/collapsible-selectproxy.css" />
-	<link rel="stylesheet" href="src/collapsible.navbar.css" />
-	<script src="src/lib/jquery.js"></script>
-	<script src="src/lib/xrayhtml.js"></script>
-	<script type="text/javascript" src="src/collapsible.js"></script>
-	<script type="text/javascript" src="src/collapsible.set.js"></script>
-	<script type="text/javascript" src="src/collapsible.menu.js"></script>
-	<script type="text/javascript" src="src/collapsible.menuunderlay.js"></script>
-	<script type="text/javascript" src="src/collapsible.menuactiveitem.js"></script>
-	<script type="text/javascript" src="src/collapsible.tab.js"></script>
-	<script type="text/javascript" src="src/collapsible.externaltoggle.js"></script>
-	<script type="text/javascript" src="src/collapsible.selectproxy.js"></script>
-	<script type="text/javascript" src="src/collapsible.navbar.js"></script>
-	<script src="face-api.js"></script>
-	<script>
-		document.documentElement.className += " enhanced";
-	</script>
+    canvas {
+      position: absolute;
+    }
+  </style>
 </head>
-
-
-<body class="docs">
-
-<div style="position: relative" class="margin">
-  <video onplay="onPlay(this)" id="inputVideo" autoplay muted></video>
-  <canvas id="overlay" />
-</div>
+<body>
+  <video id="video" width="720" height="560" autoplay muted></video>
 </body>
 </html>
