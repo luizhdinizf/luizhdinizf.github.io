@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Collapsible Examples</title>
+	<title>Face Recognition</title>
 
 	<link rel="stylesheet" href="docs.css">
 	<link rel="stylesheet" href="src/lib/xrayhtml.css">
@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="src/collapsible.externaltoggle.js"></script>
 	<script type="text/javascript" src="src/collapsible.selectproxy.js"></script>
 	<script type="text/javascript" src="src/collapsible.navbar.js"></script>
-	
+	<script src="face-api.js"></script>
 	<script>
 		document.documentElement.className += " enhanced";
 	</script>
@@ -29,5 +29,10 @@
 
 
 <body class="docs">
+
+<div style="position: relative" class="margin">
+  <video onplay="onPlay(this)" id="inputVideo" autoplay muted></video>
+  <canvas id="overlay" />
+</div>
 </body>
 </html>
